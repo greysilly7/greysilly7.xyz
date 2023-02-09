@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  color: inherit;
+  list-style: none;
+  display: block;
+  padding: 0;
+  float: left;
+}
+
+li {
+  display: inline-block;
+  margin-left: 10px;
+  background-color: var(--nav-item-bg-color);
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+a {
+  color: var(--nav-item-text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--nav-item-hover-color);
+}

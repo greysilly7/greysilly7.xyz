@@ -24,59 +24,6 @@ body.dark-theme {
   color: var(--dark-theme-text-color);
 }
 
-.header-container {
-  background-color: var(--header-bg-color);
-  height: 70px;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-ul {
-  color: inherit;
-  list-style: none;
-  display: block;
-  padding: 0;
-  float: left;
-}
-
-li {
-  display: inline-block;
-  margin-left: 10px;
-  background-color: var(--nav-item-bg-color);
-  border-radius: 20px;
-  padding: 10px 15px;
-}
-
-a {
-  color: var(--nav-item-text-color);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--nav-item-hover-color);
-}
-
-.center-image-container {
-  display: block;
-  padding-top: 40px;
-  text-align: center;
-}
-
-.center-image {
-  display: block;
-  margin: 0 auto;
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-}
-
-.glow {
-  box-shadow: 0 0 20px 15px var(--glow-color);
-}
 
 #theme-toggle {
   /* Style the theme toggle button */
