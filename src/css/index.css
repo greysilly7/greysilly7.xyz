@@ -19,7 +19,7 @@ body {
   color: var(--main-text-color);
 }
 
-.dark-theme {
+body.dark-theme {
   background-color: var(--dark-theme-bg-color);
   color: var(--dark-theme-text-color);
 }

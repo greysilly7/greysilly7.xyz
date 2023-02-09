@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import "../css/App.css"
 
@@ -7,14 +7,13 @@ function App() {
     localStorage.getItem("theme") || "light"
   );
 
+  useEffect(() => {
+    document.body.className = currentTheme;
+    localStorage.setItem("theme", currentTheme);
+  }, [currentTheme]);
+
   const handleToggleTheme = () => {
-    if (currentTheme === "light") {
-      setCurrentTheme("dark-theme");
-      localStorage.setItem("theme", "dark-theme");
-    } else {
-      setCurrentTheme("light");
-      localStorage.setItem("theme", "light");
-    }
+    setCurrentTheme(currentTheme === "light" ? "dark-theme" : "light");
   };
 
   return (
