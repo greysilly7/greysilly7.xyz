@@ -39,3 +39,23 @@ body.dark-theme #theme-toggle {
   /* Change the background color and icon of the theme toggle button in dark theme */
   background-color: var(--dark-toggle-bg-color);
 }
+
+@media only screen and (max-width: 767px) {
+  .header-container {
+    height: 60px;
+  }
+
+  .center-image-container {
+    padding-top: 30px;
+  }
+
+  .center-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+  }
+
+  #theme-toggle {
+    font-size: 14px;
+  }
+}

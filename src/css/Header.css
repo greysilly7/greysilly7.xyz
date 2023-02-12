@@ -7,14 +7,16 @@ header {
 ul {
   color: inherit;
   list-style: none;
-  display: block;
+  display: flex;
   padding: 0;
-  float: left;
+  margin: 0;
+  justify-content: center;
 }
 
 li {
   display: inline-block;
   margin-left: 10px;
+  margin-right: 10px;
   background-color: var(--nav-item-bg-color);
   border-radius: 20px;
   padding: 10px 15px;
@@ -27,4 +29,18 @@ a {
 
 a:hover {
   color: var(--nav-item-hover-color);
+}
+
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+  }
+  
+  ul {
+    flex-direction: column;
+  }
+  
+  li {
+    margin: 10px 0;
+  }
 }

@@ -1,21 +1,37 @@
 .header-container {
   background-color: var(--header-bg-color);
   height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .center-image-container {
   display: block;
-  padding-top: 40px;
   text-align: center;
+  width: 100%;
+  padding-top: 5vh;
 }
 
 .center-image {
   display: block;
   margin: 0 auto;
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
 }
+
+@media only screen and (max-width: 767px) {
+  .center-image-container {
+    padding-top: 20px;
+  }
+
+  .center-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 
 .glow {
   box-shadow: 0 0 20px 15px var(--glow-color);
