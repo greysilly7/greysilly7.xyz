@@ -1,0 +1,7 @@
+.git
+.gitignore
+.dockerignore
+flake.nix
+flake.lock
+Dockerfile
+LICENSE
